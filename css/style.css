@@ -339,6 +339,7 @@ header ul li a{
 }
 
 .conteudo-doacao{
+    border-radius: 50px;
    display: flex;
    width: 60%;
    margin-left: 21% ;
@@ -347,6 +348,7 @@ header ul li a{
     -moz-box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
     box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
 }
+
 
 .conteudo-texto p{
     margin: 10% 5%;
@@ -372,6 +374,7 @@ header ul li a{
 }
 
 .conteudo-doacao2{
+    border-radius: 50px;
     display: flex;
     width: 60%;
     margin-left: 21% ;
@@ -385,8 +388,17 @@ header ul li a{
      margin: 20% 5%;
  }
  
+.conteudo-doacao img{
+    border-radius: 50px 0 0 50px;
+}
+
+.conteudo-doacao2 img{
+    border-radius: 0 50px 50px 0;
+}
+
  .conteudo-texto{
     background: #fff;
+    border-radius: 50px;
  }
 
  .conteudo-doacao2 p span{
@@ -395,9 +407,9 @@ header ul li a{
 }
 
 .conteudo-doacao3{
-    background: url(../img/background-conteudo.png) no-repeat center/cover;
+    border-radius: 50px;
     display: flex;
-    padding: 10% 0;
+    padding: 7% 0;
     width: 60%;
     margin-left: 21% ;
     margin-top: 10%;
@@ -473,10 +485,13 @@ header ul li a{
 }
 
 .lista-criterios{
-   background: rgba(255, 0, 34, 0.158);
+    background: linear-gradient(to bottom right,rgb(255,255,255), rgb(255,255,255), rgba(255, 0, 0, 0.733));
    backdrop-filter: blur(10px);
    -webkit-backdrop-filter: blur(10px);
     width: 50%;
+    -webkit-box-shadow:0px 7px 28px 9px rgba(0,0,0,0.4);
+     -moz-box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+     box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
 }
 
 #criterios article{
@@ -486,4 +501,19 @@ header ul li a{
 .img-criterios{
     width: 50%;
     background: url(../img/background-criterio2.jpg);
+}
+
+.rodape{
+    margin-top: 5%;
+    padding: 1% 0;
+    text-align: center;
+    background: rgba(48, 45, 45, 0.534);
+    border-radius: 5% 5% 0 0 ;
+}
+
+.rodape h1{
+    font-size: 1.5em;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 5%;
 }
