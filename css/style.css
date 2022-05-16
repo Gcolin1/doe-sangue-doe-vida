@@ -301,9 +301,10 @@ header ul li a{
     height: 300px;
     padding: 40px 0;
     font-size: 1.5em;
-    margin-right: 0;
+    margin-left: 0;
     z-index:1;
-    
+    position: relative;
+    right: 50px;    
     
     
 
@@ -526,23 +527,8 @@ button{
     background: none;
     border: none;
     cursor: pointer;
-    
 }
 
-.abrir-menu div{
-    background: rgb(255, 0, 0);
-    width: 32px;
-    height: 3px;
-    margin: 5px 0;
-    z-index: 2;
-}
-
-.fechar-menu div{
-    background: rgb(255, 0, 0);
-    width: 32px;
-    height: 3px;
-    margin: 5px 0;
-}
 
 .fechar1{
     transform: rotate(-45deg) translate(-1px, 4.5px);
@@ -552,13 +538,24 @@ button{
     transform: rotate(45deg) translate(-1px, -4.5px);
 }
 
-@media not all and(max-width:600px){
-    #abrir-menu{
-        display: none;
-    }
-}
+
 
 @media (max-width: 600px){
+
+    .abrir-menu div{
+        background: rgb(255, 0, 0);
+        width: 32px;
+        height: 3px;
+        margin: 5px 0;
+        z-index: 2;
+    }
+    
+    .fechar-menu div{
+        background: rgb(255, 0, 0);
+        width: 32px;
+        height: 3px;
+        margin: 5px 0;
+    }
 
     body{
         overflow-x: hidden;
@@ -578,15 +575,20 @@ button{
         position: absolute;
         display: flex;
         flex-direction: column;
-        background: #ccc;
+        background: linear-gradient(to bottom left,rgb(255,255,255), rgb(255,255,255), rgba(255, 0, 0, 0.733));
         width: 50vw;
         height: 90vh;
         justify-content: space-around;
         text-align: center;
         align-items: center;
-        transform: translateX(200%);
+        transform: translateX(100%);
         top: 0;
+        right: 0;
         transition: transform 0.3s ease-in;
+    }
+
+    .menu-active{
+        transform: translateX(0);
     }
 
     header li{
@@ -642,11 +644,128 @@ button{
     .abrir-menu div{
        display: block;
        position: relative;
-       bottom: 1400px;
+       bottom: 975px;
        left: 530px;
     }
 
-    .header-active{
-        transform: translateX(0);
+    .doacao{
+        max-width: 100%;
+    }
+
+    .conteudo-doacao{
+        border-radius: 50px;
+       display: flex;
+       flex-direction: column;
+        width: 350px;
+       
+       -webkit-box-shadow:0px 7px 28px 9px rgba(0,0,0,0.4);
+        -moz-box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+        box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+    }
+    
+    .conteudo-doacao2{
+        border-radius: 50px;
+       display: flex;
+       flex-direction: column;
+        width: 350px;
+       -webkit-box-shadow:0px 7px 28px 9px rgba(0,0,0,0.4);
+        -moz-box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+        box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+    }
+    
+    .conteudo-doacao img{
+        border-radius: 50px 50px 0 0;
+    }
+    
+    .conteudo-doacao2 img{
+        border-radius: 0 0 50px 50px;
+    }
+    
+    /*CRITERIOS*/
+
+    #criterios h1{
+        margin-top: 7%;
+        font-size: 1.5em;
+    }
+    
+    .lista-criterios ul{
+        font-family: 'Titillium Web', sans-serif;
+        list-style-image: url(../img/gota2.png) ;
+        margin-left: 15%;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        width: 70%;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.5em;
+    }
+    
+    .lista-criterios ul li{
+        margin: 2% 0;
+        text-align: justify;
+    }
+    
+    .lista-criterios{
+        background: linear-gradient(to bottom right,rgb(255,255,255), rgb(255,255,255), rgba(255, 0, 0, 0.733));
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+        width: 100%;
+        -webkit-box-shadow:0px 7px 28px 9px rgba(0,0,0,0.4);
+         -moz-box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+         box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+    }
+    
+    .img-criterios{
+      display: none;
+    }
+
+    .container{
+       display: none;
+    }
+   
+    .sobre p{
+        margin-top: 30%;
+        width: 400px;
+        margin-bottom: 10%;
+    }
+
+    .info{
+        margin-bottom: 5%;
+        padding-bottom: 3%;
+        margin-top: 5%;
+        padding-top: 3%;
+        margin-left: 11%;
+        
+    }
+    
+    .info h2{ 
+        font-size: 2em;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: bold;
+        color: rgb(255, 0, 0);
+        margin-bottom: 5%;
+    }
+    
+    .info p{
+        margin-top: 3%;
+        font-size: 1.8em;
+        margin-left: 0;
+        font-family: 'Zilla Slab', serif;
+        text-align: justify;
+        font-weight: bold;
+    }
+    
+    .img-info{
+        margin-left: 0;
+        margin-top: 3%;
+        margin-bottom: 5%;
+       
+        -webkit-box-shadow:0px 4px 14px 8px rgba(62,66,66,0.58);
+        -moz-box-shadow: 0px 4px 14px 8px rgba(62,66,66,0.58);
+        box-shadow: 0px 4px 14px 8px rgba(62,66,66,0.58);
+    }
+    
+    .info span{
+        font-size: 1em;
+        font-weight: bold;
     }
 }
