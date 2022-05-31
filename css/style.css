@@ -36,7 +36,9 @@ body{
     background: rgba(255, 92, 92, 0.753);
 }
 
-
+.tiulo{
+    text-align: center;
+}
 
 section{
     position: relative;
@@ -614,6 +616,7 @@ header ul li a{
     margin-top: 5%;
     padding: 1% 0;
     text-align: center;
+    width: 100%;
     background: rgba(255, 0, 0, 0.801);
     border-radius: 5% 5% 0 0 ;
 }
@@ -668,6 +671,11 @@ button{
         max-width: 1200px;
     }
 
+    header ul{
+        position: relative;
+        right: 120px;
+    }
+
     .parallax{
         width: 1200px;
         padding-right: 50px;
@@ -686,10 +694,10 @@ button{
         width: 300px;
         display: flex;
         justify-content: flex-end;
-        margin-bottom: 120%;
-        margin-right: 350px;
+        margin-bottom: 90%;
+        margin-right: 390px;
         position: relative;
-        right: 400px;
+        right: 560px;
     }
 
     .mascote img{
@@ -698,14 +706,26 @@ button{
         margin-right: 0;
     }
 
+    
+
     .conteudo-doacao2 img {
         width: 50%;
     }
-
     
-
     .conteudo-doacao img {
         width: 50%;
+    }
+
+    .conteudo-doacao2{
+        position: relative;
+        right: 100px;
+        background: #fff;
+    }
+
+    .conteudo-doacao3{
+        position: relative;
+        right: 100px;
+        background: #fff;
     }
 
     .conteudo-doacao{
@@ -714,10 +734,14 @@ button{
 
     .conteudo-doacao{
         border-radius: 50px;
+        position: relative;
+        right: 100px;
+        background: #fff;
     }
 
     .conteudo-doacao2 div{
         border-radius: 0;
+        
     }
 
     .conteudo-doacao2 div{
@@ -726,6 +750,16 @@ button{
 
     .img-info{
         margin-left: -4%;
+    }
+
+    .container-cards{
+       max-width: 900px;
+       flex-wrap: wrap;
+       margin-left: 150px;
+    }
+
+    .card{
+        margin: 20px 0px;
     }
 
     .btn-topo{
@@ -740,6 +774,43 @@ button{
         width: 80px;
         text-align: center;
     }
+
+    #criterios h1{
+        margin-top: 7%;
+        font-size: 1.5em;
+    }
+    
+    .lista-criterios ul{
+        font-family: 'Titillium Web', sans-serif;
+        list-style-image: url(../img/gota2.png) ;
+        margin-left: 15%;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        width: 70%;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.5em;
+    }
+    
+    .lista-criterios ul li{
+        margin: 2% 0;
+        text-align: justify;
+    }
+    
+    .lista-criterios{
+        background: linear-gradient(to bottom right,rgb(255,255,255), rgb(255,255,255), rgba(255, 0, 0, 0.733));
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+       max-width: 1200px;
+        width: 100%;
+        -webkit-box-shadow:0px 7px 28px 9px rgba(0,0,0,0.4);
+         -moz-box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+         box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+    }
+    
+    .img-criterios{
+      display: none;
+    }
+
 }
 
 
@@ -775,28 +846,34 @@ button{
         top: 5%;
     }
 
-    header{
-        
-    }
     
     header ul{
         position: absolute;
         display: flex;
         flex-direction: column;
         background: linear-gradient(to bottom left,rgb(255,255,255), rgb(255,255,255), rgba(255, 0, 0, 0.733));
-        width: 50vw;
+        width: 0vw;
         height: 90vh;
+        margin-top: 30px;
         justify-content: space-around;
+       
         text-align: center;
         align-items: center;
-        transform: translateX(100%);
+        display: block;
+        right: -40%;
         top: 0;
-        right: 0;
-        transition: transform 0.3s ease-in;
+        transition: .6s;
+        visibility: hidden;
+        overflow-x: hidden;
+    }
+
+    header ul li{
+        margin-top: 50px;
     }
 
     .menu-active{
-        transform: translateX(0);
+        width: 70vw;
+        visibility: visible;
     }
 
 
@@ -813,7 +890,7 @@ button{
     }
 
     .parallax{
-        max-width: 600px;
+        width: 650px;
         height: 300px;
         padding: 40px 0;
         font-size: 1.5em;
@@ -830,7 +907,7 @@ button{
     }
 
     .parallax2{
-        width: 600px;
+        width: 650px;
         height: 300px;
         padding: 40px 0;
         font-size: 1.5em;
@@ -849,7 +926,7 @@ button{
     .abrir-menu div{
        display: block;
        position: relative;
-       bottom: 965px;
+       bottom: 810px;
        left: 530px;
     }
 
@@ -857,7 +934,13 @@ button{
         max-width: 100%;
     }
 
+    .doacao h1{
+        margin-left: 35%;
+        width: 90%;
+    }
+
     .conteudo-doacao{
+        margin-left: 240px;
         border-radius: 50px;
        display: flex;
        flex-direction: column;
@@ -869,6 +952,7 @@ button{
     }
     
     .conteudo-doacao2{
+        margin-left: 240px;
         border-radius: 50px;
        display: flex;
        flex-direction: column;
@@ -876,6 +960,13 @@ button{
        -webkit-box-shadow:0px 7px 28px 9px rgba(0,0,0,0.4);
         -moz-box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
         box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+    }
+
+    
+
+    .conteudo-doacao3{
+        margin-left: 240px;
+        width: 350px;
     }
     
     .conteudo-doacao2 div{
@@ -897,6 +988,8 @@ button{
     #criterios h1{
         margin-top: 7%;
         font-size: 1.5em;
+        margin-left: 8%;
+        
     }
     
     .lista-criterios ul{
@@ -923,6 +1016,10 @@ button{
         -webkit-box-shadow:0px 7px 28px 9px rgba(0,0,0,0.4);
          -moz-box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
          box-shadow: 0px 7px 28px 9px rgba(0,0,0,0.4);
+    }
+
+    #criterios{
+        width: 650px;
     }
     
     .img-criterios{
@@ -980,19 +1077,37 @@ button{
         font-weight: bold;
     }
 
-    .btn-topo{
-        position: fixed;
-        margin: 30px;
-        border-radius: 50px;
-        background: rgba(250, 0, 0, 0.349);
-        z-index: 9999;
-        right: 30%;
-        bottom: 0;
-        animation: fadeIn 1s ease-in-out;
-        width: 80px;
-        text-align: center;
+    .localizacao{
+        margin-top: 50px;
     }
-    
+
+    .localizacao h1{
+        width: 80%;
+        margin-left: 35%;
+    }
+
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 200px;
+    }
+
+    .card{
+        margin: 20px 0;
+    }
+
+    .info p{
+        font-size: 1.2em;
+    }
+
+    .btn-topo{
+       display: none;
+    }
+
+    .rodape{
+        width: 650px;
+    }
 }
 
 
