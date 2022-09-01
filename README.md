@@ -8,4 +8,4 @@ o projeto doe sangue doe vida é um site informativo feito com HTML, CSS e Javas
  <img  alt="javascript" height="30" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 </div><br>
 
-podendo ser acessado  através do link  https://doesanguedoevida.app.br
+podendo ser acessado  através do link  https://gcolin1.github.io/doe-sangue-doe-vida/
